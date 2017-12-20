@@ -1,0 +1,30 @@
+{
+  "name": "ntsc",
+  "version": "1.0.0",
+  "description": "quickstart node with typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc --watch\" \"nodemon dist\"",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "green arbi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "7.0.22",
+    "concurrently": "^3.5.1",
+    "ejs": "^2.5.7",
+    "express": "4.15.3",
+    "nodemon": "1.11.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.22",
+    "mocha": "3.4.2",
+    "supertest": "3.0.0",
+    "tsc": "1.20150623.0",
+    "typescript": "2.3.3"
+  }
+}
